@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #E1D5B8;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: 100;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #738054;
+    pointer-events: none;
+    margin-right: 240px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #738054;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover, 
+.navigation a.active{
+    background: #738054;
+    color: #E1D5B8;
+}
+
+.parallax {
+    position: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88.5vh;
+}
+
+#text {
+    position: relative;
+    bottom: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 5em;
+    color: #AA722A;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.parallax img{
+    position: absolute;
+    pointer-events: none;
+}
+.parallax .table{
+    top: 425px;
+    width: 110%;
+    height: 20%;
+}
+
+.parallax .plant1 {
+    left: 0;
+    top: 80px;
+    width: 22.5%;
+    height: 65%;
+}
+
+.parallax .plant2 {
+    left: 1050px;
+    bottom: 225px;
+    width: 30%;
+    height: 70%;
+}
+
+.parallax .plant3 {
+    left: 925px;
+    top: 240px;
+    width: 15%;
+    height: 37.5%;
+}
+
+.parallax .plant4 {
+    left: 1050px;
+    top: 280px;
+    width: 15%;
+    height: 35%;
+}
+
+.parallax .plant5 {
+    left: 80px;
+    top: 410px;
+    width: 4.5%;
+    height: 15%;
+}
+
+.sec .content {
+    margin-top: 540px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 30px;
+    height: 500px;
+    width: 690px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #232619;
+    overflow-x: hidden;
+}
+
+.sec .content h2 {
+    font-size: 3em;
+    color: #E1D5B8;
+    margin-bottom: 10px;
+}
+  
+.sec .content p {
+    font-size: 1em;
+    color: #E1D5B8;
+    font-size: 300;
+}
+
+.sec .slideshow {
+    top: 540px;
+    margin-left: 690px;
+    padding-left: 0;
+    height: 500px;
+    position: absolute;
+    background-color: #232619;
+}
+
+.sec .slideshow img{
+    left: 80px;
+    top: 410px;
+    width: 100%;
+    height: 100%;
+}
+
+.sec.slideshow.hills {
+    display: none;
+}
+.left, .right, .badge {
+    cursor: pointer;
+}
+
+.badge {
+    height: 13px;
+    width: 13px;
+    padding: 0;
+}
