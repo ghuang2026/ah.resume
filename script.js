@@ -6,13 +6,15 @@ let plant4 = document.getElementById("plant 4");
 let plant5 = document.getElementById("plant 5");
 
 window.addEventListener('scroll', () => {
-    let value = window.scrollY;
+  let value = window.scrollY;
+  if(value < 500){
     text.style.marginTop = value * 2.5 + 'px';
     plant2.style.bottom = 225 + value * 0.75 + 'px';
     plant1.style.left = 0 - value * 0.75 + 'px';
     plant4.style.left = 1050 + value * 1 + 'px';
     plant3.style.left = 925 + value * 0.65 + 'px';
     plant5.style.left = 80 - value * 0.5 + 'px';
+  }
 })
 
 var myIndex = 0;
